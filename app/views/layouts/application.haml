@@ -1,0 +1,33 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'utf-8' }/
+    %meta{ content: 'IE=Edge,chrome=1', 'http-equiv' => 'X-UA-Compatible' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name: 'viewport' }/
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+
+  %body
+    %nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          %a.navbar-brand{:href => '/'} #{AppConfig.workshops_name}
+        %ul.nav.navbar-right.navbar-nav
+          -if user_signed_in?
+            %li
+              = link_to('user profile', current_user)
+            %li
+              = link_to('edit profile', edit_user_registration_path)
+            %li
+              = link_to('logout', destroy_user_session_path, :method => :delete)
+          - else
+            %li
+              = link_to('sign in', new_user_session_path)
+            %li
+              = link_to('sign up', new_user_registration_path)
+
+    .container-fluid
+      .row
+        .col-lg-12
+          = yield
