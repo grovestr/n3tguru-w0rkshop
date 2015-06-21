@@ -144,6 +144,7 @@ describe ProductsController do
 
         describe 'with invalid params' do
           it 'expose a newly created but unsaved product' do
+
             Product.any_instance.stub(:save).and_return(false)
             post :create, { product: { 'title' => 'invalid value' }, category_id: category.to_param }
             expect(controller.product).to be_a_new(Product)

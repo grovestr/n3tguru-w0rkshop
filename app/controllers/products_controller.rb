@@ -12,13 +12,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  #before_filter :require_permission_to_delete, only: [:destroy]
-  #def require_permission_to_delete
-  #  if current_user != product.user and current_user.admin == false
- #     redirect_to new_user_session_path, :flash => { :error => "You are not allowed to delete this product." }
-  #  end
- # end
-
   def index
   end
 
@@ -44,21 +37,19 @@ class ProductsController < ApplicationController
     else
       redirect_to(new_user_session_path)
     end
-
   end
 
   def update
     if user_signed_in?
       product.user = current_user
       if self.product.update(product_params)
-          redirect_to category_product_url(category, product), notice: 'Product was successfully updated.'
+        redirect_to category_product_url(category, product), notice: 'Product was successfully updated.'
       else
-          redirect_to category_product_url(category, product)
+        redirect_to category_product_url(category, product)
       end
     else
       redirect_to(new_user_session_path)
     end
-
   end
 
   # DELETE /products/1

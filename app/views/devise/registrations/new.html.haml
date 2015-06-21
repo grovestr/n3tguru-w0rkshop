@@ -1,6 +1,5 @@
 %h2 Sign up
-= simple_form_for(resource, as: resource_name, url: user_registration_path) do |f|
-  = devise_error_messages!
+= simple_form_for(resource, url: user_registration_path) do |f|
   = f.error_notification
   .form-inputs
     = f.input :email, required: true, autofocus: true

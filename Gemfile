@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.8'
 
+gem 'rails_12factor'
 gem 'pg', '~> 0.18.0.pre20141117110243'
 gem 'draper'
 gem 'decent_exposure'

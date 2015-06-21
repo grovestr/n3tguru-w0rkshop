@@ -1,6 +1,6 @@
 %h2
   Edit #{resource_name.to_s.humanize}
-= simple_form_for(resource, as: resource_name, url: user_registration_path, html: { method: :put }) do |f|
+= simple_form_for(resource, url: user_registration_path, html: { method: :put }) do |f|
   = f.error_notification
   .form-inputs
     = f.input :email, required: true, autofocus: true
@@ -12,7 +12,7 @@
     = f.input :current_password, hint: "we need your current password to confirm your changes", required: true
   .form-actions
     = f.button :submit, "Update"
-%h2 Cancel my account
+%h3 Cancel my account
 %p
-  Unhappy? #{link_to "Cancel my account", user_registration_path, data: { confirm: "Are you sure?" }, class: 'btn btn-danger', method: :delete}
-= link_to "Back", :back, class: 'btn btn-default'
+  Unhappy? #{link_to "Cancel my account", user_registration_path, data: { confirm: "Are you sure?" }, method: :delete}
+= link_to "Back", :back

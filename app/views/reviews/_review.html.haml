@@ -1,4 +1,9 @@
-%p= review.content
 %p
-  %b= review.rating
-  %em= link_to "#{review.author}", "/users/#{review.user_id}"
+%p
+  =link_to "#{review.author}", "/users/#{review.user_id}"
+  ="wrote:"
+  %br
+  %em= review.content
+  %br
+  %b= "Rating: #{review.rating}/5"
+

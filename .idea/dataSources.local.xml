@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails workshops-master: development" uuid="8c666fc2-7e83-4bd2-a12a-44039339478f">
+    <data-source name="Rails workshops: development" uuid="721355f6-1a81-4050-ae60-52facc9cd0b3">
       <user-name>workshops</user-name>
       <user-password>dfcfdfdfdfd8dfc5df98df9adf9adf9e</user-password>
+      <schema-pattern>workshops_development.pg_catalog workshops_development.public</schema-pattern>
+      <default-schemas>workshops_development.pg_catalog workshops_development.public</default-schemas>
     </data-source>
-    <data-source name="Rails workshops-master: test" uuid="548ea668-6632-443a-b083-25808a35d373">
+    <data-source name="Rails workshops: test" uuid="e62b92fd-17b2-4f9b-b616-744f632a677b">
       <user-name>workshops</user-name>
       <user-password>dfcfdfdfdfd8dfc5df98df9adf9adf9e</user-password>
+      <schema-pattern>workshops_test.pg_catalog workshops_test.public</schema-pattern>
+      <default-schemas>workshops_test.pg_catalog workshops_test.public</default-schemas>
     </data-source>
   </component>
 </project>

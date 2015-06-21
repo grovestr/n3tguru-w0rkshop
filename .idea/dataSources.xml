@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1124091035">
-    <data-source source="LOCAL" name="Rails workshops-master: development" uuid="8c666fc2-7e83-4bd2-a12a-44039339478f">
+  <component name="DataSourceManagerImpl" format="xml" hash="3382560845">
+    <data-source source="LOCAL" name="Rails workshops: development" uuid="721355f6-1a81-4050-ae60-52facc9cd0b3">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/workshops_development</jdbc-url>
-      <libraries />
+      <jdbc-url>jdbc:postgresql://127.0.0.1/workshops_development</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.3-1100.jdbc4.jar</url>
+        </library>
+      </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails workshops-master: test" uuid="548ea668-6632-443a-b083-25808a35d373">
+    <data-source source="LOCAL" name="Rails workshops: test" uuid="e62b92fd-17b2-4f9b-b616-744f632a677b">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/workshops_test</jdbc-url>
-      <libraries />
+      <jdbc-url>jdbc:postgresql://127.0.0.1/workshops_test</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.3-1100.jdbc4.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

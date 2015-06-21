@@ -1,5 +1,5 @@
 %h2 Resend confirmation instructions
-= simple_form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f|
+= simple_form_for(resource, url: user_confirmation_path, html: { method: :post }) do |f|
   = f.error_notification
   = f.full_error :confirmation_token
   .form-inputs
